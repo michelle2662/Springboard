@@ -1,7 +1,7 @@
 
 
 function part1(){
-    const promise = fetch("http://numbersapi.com/22?json")
+    const promise = fetch("http://numbersapi.com/23?json")
     .then(response => {
         return response.json();
     })
