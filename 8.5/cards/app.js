@@ -83,7 +83,3 @@ function printPicture(data){
 
  
     
-    // drawCardFromDeck()
-    // .then(() => drawCardFromDeck()) // Second draw after the first completes
-    // .catch(error => console.error("Error drawing cards:", error));
-
