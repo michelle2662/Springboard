@@ -1,3 +1,6 @@
 [submodule "8.5/number_facts"]
 	path = 8.5/number_facts
 	url = git@github.com:michelle2662/number_facts.git
+[submodule "8.9/8.9/oop-science-lab-4c2a313f530c4beaa86eddcad8ff5127"]
+	path = 8.9/8.9/oop-science-lab-4c2a313f530c4beaa86eddcad8ff5127
+	url = git@github.com:hatchways-community/oop-science-lab-4c2a313f530c4beaa86eddcad8ff5127.git
