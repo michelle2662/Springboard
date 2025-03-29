@@ -3,7 +3,7 @@ function App ()
 
 	return (
 		<div id = "title">
-			<h1> Pokedex</h1>
+			<h1> Pokemon Game</h1>
 			<Pokegame>
 				<Pokedex></Pokedex>
 			</Pokegame>
