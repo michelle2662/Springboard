@@ -1,6 +1,6 @@
 
 function Pokedex(props) {
-
+    console.log("Pokedex: " , props)
     return(
         <div id = "pokedex">
             
@@ -12,6 +12,11 @@ function Pokedex(props) {
                     type = {pokemon.type}
                     base_experience = {pokemon.base_experience} />
             )}
+
+            <div id = "win-status">
+                { props.isWinner? <h2> THIS HAND WINS! </h2> : null }
+
+            </div>
         
         </div>
        

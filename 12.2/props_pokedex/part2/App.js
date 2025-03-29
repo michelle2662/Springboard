@@ -4,7 +4,10 @@ function App ()
 	return (
 		<div id = "title">
 			<h1> Pokedex</h1>
-			<Pokedex > </Pokedex>
+			<Pokegame>
+				<Pokedex></Pokedex>
+			</Pokegame>
+
 		</div>
 	);
 }

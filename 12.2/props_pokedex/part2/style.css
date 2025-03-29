@@ -28,8 +28,11 @@
   }
   
   #pokecard-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 10px;
   }
   
+  h1 {
+    text-align: center;
+  }
