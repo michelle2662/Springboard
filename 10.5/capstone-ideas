@@ -1,0 +1,85 @@
+# 🧑‍⚕️ Capstone Project Idea: CareConnect – A Collaborative App for Caregivers
+
+## 🔍 Problem Statement
+Millions of people care for aging parents, disabled family members, or chronically ill loved ones—but most do it without proper tools. From keeping track of medications and doctor visits to coordinating between siblings or healthcare aides, caregiving can quickly become overwhelming.
+
+**CareConnect** is a full-stack web application designed to centralize and simplify caregiving. It helps families manage and collaborate on their loved one’s care through a shared digital dashboard.
+
+---
+
+## 💡 Project Overview
+
+**CareConnect** is a collaborative healthcare app for caregivers. Users can manage multiple care profiles (e.g. Mom, Dad, Partner), track medications, appointments, notes, tasks, and share updates securely with others involved in care.
+
+---
+
+## 🛠️ Core Features
+
+### 🧾 Care Profile Dashboard
+- Create profiles for loved ones receiving care
+- See daily activity, upcoming tasks, and updates at a glance
+
+### 💊 Medication Tracker
+- Add medications, dosage, schedule, and refill reminders
+- Log when meds are taken
+- Optional API integration with OpenFDA or RxNorm for auto-filling drug data
+
+### 🗓️ Appointment Manager
+- Track upcoming and past medical appointments
+- Attach visit notes, lab results, and upload PDFs or images
+- Share visit summaries with other caregivers
+
+### ✅ Condition-Specific Checklists
+- Pre-built checklists for common conditions:
+  - Dementia
+  - Diabetes
+  - Recovery/Post-Surgery
+- Create custom tasks or care routines
+
+### 📝 Shared Notes & Messaging
+- Add logs or updates (e.g., "BP high this morning", "Skipped lunch")
+- Tag notes by category or urgency
+- Collaborators can comment or react
+
+### 👥 Multi-User Collaboration
+- Invite other caregivers (family, professionals)
+- Role-based permissions (Viewer / Editor / Admin)
+- Activity feed & real-time updates
+
+### 🗂️ Document Storage
+- Upload & organize files: prescriptions, discharge papers, ID cards, etc.
+- Control file access per caregiver
+
+---
+
+## 🔐 Stretch Goals / Future Scope
+- End-to-end encryption & HIPAA-style privacy settings
+- Integration with Google Calendar
+- Emergency profile card for quick access to meds & contacts
+- AI-generated care summaries
+- Voice memo support
+
+---
+
+## 🧩 Data & APIs
+
+- Custom-built API to handle:
+  - User auth
+  - Care profiles
+  - Medications
+  - Notes, tasks, files, and appointments
+- Optional external APIs:
+  - **OpenFDA / RxNorm** – medication info
+  - **Google Calendar API** – sync medical visits
+  - **Twilio or Email API** – send alerts & reminders
+
+---
+
+## 🌟 Why This Project Matters
+
+- Real-world problem with strong emotional and social impact
+- Unique in its focus on **team caregiving**, not just personal health
+- Demonstrates full-stack architecture, relational data design, file upload, notifications, and more
+- Great conversation starter in interviews—especially for health tech or mission-driven companies
+
+---
