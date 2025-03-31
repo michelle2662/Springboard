@@ -13,7 +13,7 @@ function BattleField() {
     console.log("Player: ", playerHealth)
     console.log("Enemy: ", enemyHealth)
 
-    function calculateHealth(playerHealth, enemyHealth) {
+    function calculateHealth() {
         setPlayerHealth(prevHealth => Math.max(prevHealth - attack(), 0)); 
         setEnemyHealth(prevHealth => Math.max(prevHealth - attack(), 0));   
     
