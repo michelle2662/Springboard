@@ -1,14 +1,20 @@
-function BattleAttack({updateHealth, playerHealth, enemyHealth, updateStatus}) {
+function BattleAttack({updateHealth, playerHealth, enemyHealth, updateStatus, reset}) {
 
     const isGameOver = playerHealth > 0 && enemyHealth >0 ? false : true
-
+    
+    
     return(
         <div>
             <button onClick = {() => {
-                updateHealth(playerHealth,enemyHealth)
-                updateStatus(isGameOver)
+                if (!isGameOver) {
+                    updateHealth(playerHealth,enemyHealth)
+                    updateStatus(isGameOver)
+                } else {
+                    reset()
+                }
+               
                 }}>
-            {playerHealth > 0 && enemyHealth >0 ? "Attack" : "Restart"}
+            {!isGameOver? "Attack" : "Restart"}
            </button>
         </div>
     )
