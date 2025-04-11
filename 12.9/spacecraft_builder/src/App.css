@@ -1,42 +1,77 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+body {
+    background-color: #0a0f1c;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  form {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #0a0f1c;
+    margin-bottom: 2rem;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  input[type="text"],
+  input[type="checkbox"],
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: #0a0f1c;
+    border: 1px solid #ccc;
+    color: white;
   }
-}
+  
+  input[type="submit"] {
+    width: auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid #4CAF50;
+    background-color: transparent;
+    color: #4CAF50;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .inventory-display {
+    margin-top: 2rem;
+  }
+  
+  .item-wrapper {
+    border: 1px solid white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .item-card h3 {
+    margin: 0;
+  }
+  
+  .item-action {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .item-action button {
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    padding: 0.3rem 0.8rem;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    margin-top: 1rem;
+    font-size: 1rem;
+    white-space: nowrap;
 
-.card {
-  padding: 2em;
-}
+  }
 
-.read-the-docs {
-  color: #888;
-}
+  

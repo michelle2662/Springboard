@@ -14,8 +14,8 @@ function SpacecraftBuilder() {
 
     }
 
-    const deleteItem = (item) => {
-        setItems(prevItems.filter(prevItem => prevItem.id !== item.id))
+    const deleteItem = (itemToRemove) => {
+        setItems(items.filter(item => item.id !== itemToRemove.id))
     }
 
     useEffect(() => {
@@ -24,16 +24,22 @@ function SpacecraftBuilder() {
 
 
     return (
-        <>
+        <div className = "spacecraft-builder">
+            <h2> Add an Item to the Inventory</h2>
+
             <div className = "item-form">
                 <ItemForm addItem = {addItem} />
             </div>
 
-            <div className = "inventory-display">
-                {items.map(item =>  <InventoryDisplay key = {item.id} id = {item.id}  name = {item.name} qty = {item.qty} purpose = {item.purpose} delete = {deleteItem} />)}
-            </div>
+            <br></br>
+            <br></br>
+
+            <h2> Inventory Display </h2>
+           <div className = "inventory-display">
+                <InventoryDisplay items = {items} deleteItem ={deleteItem}/>
+           </div>
                 
-        </>
+        </div>
 
         
     ) 

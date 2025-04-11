@@ -21,14 +21,37 @@ function ItemForm({addItem}) {
         
     }
 
-    console.log("form data: ", formData)
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-            addItem([{...formData}])
-            setFormData(INITIAL_STATE)
+        const alphaRegex = /^[a-zA-Z\s]+$/;
+
+        if (!formData.name.trim() || !alphaRegex.test(formData.name)) {
+            alert("Name must contain only letters.");
+            return;
+        }
+    
+        if (!formData.purpose.trim() || !alphaRegex.test(formData.purpose)) {
+            alert("Purpose must contain only letters.");
+            return;
+        }
+    
+        // Quantity must be a valid number
+        if (!formData.qty.trim() || isNaN(formData.qty)) {
+            alert("Quantity must be a number.");
+            return;
+        }
+    
+        // Checkbox must be checked
+        if (!formData.agreed) {
+            alert("You must agree to the terms.");
+            return;
+        }
+
+        addItem({...formData})
+        setFormData(INITIAL_STATE)
         
         
     }
@@ -61,22 +84,22 @@ function ItemForm({addItem}) {
                 onChange = {handleChange}
                 required></input>
             <br></br>
+            <label htmlFor="agreed" className="checkbox-label">
             <input
-                id = "agreed"
-                type = "checkbox"
-                name = "agreed"
-                checked = {formData.agreed}
-                onChange = {handleChange}
-
-                required></input>
+                    id="agreed"
+                    type="checkbox"
+                    name="agreed"
+                    checked={formData.agreed}
+                    onChange={handleChange}
+                    required
+                /><span>Agree to Terms</span>
+            </label>
 
             <input
 
                 id = "add"
                 type = "submit"
                 value = "Add"
-                
-
             
             ></input>
 
